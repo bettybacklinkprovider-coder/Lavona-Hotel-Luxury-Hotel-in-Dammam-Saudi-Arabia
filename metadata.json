@@ -1,0 +1,6 @@
+{
+  "name": "Lavona Hotel – Luxury Hotel in Dammam, Saudi Arabia",
+  "description": "Experience 5-star luxury at Lavona Hotel Dammam (فندق لافونا). Featuring lavish suites, gourmet dining, 24-hr concierge, and warm Saudi hospitality in Al Dabab, Dammam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-sans-custom {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .font-tajawal {
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  /* Gold typography and gradient highlights */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #fce09b 0%, #d4af37 50%, #aa7c11 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gold-light {
+    color: #f7e7ce;
+  }
+
+  .border-gold-subtle {
+    border-color: rgba(212, 175, 55, 0.25);
+  }
+
+  .border-gold-accent {
+    border-color: rgba(212, 175, 55, 0.6);
+  }
+
+  .bg-gold-accent {
+    background: linear-gradient(135deg, #e2be5a 0%, #c59b27 100%);
+  }
+
+  .bg-gold-hover {
+    background: linear-gradient(135deg, #f0cc68 0%, #d8aa32 100%);
+  }
+
+  .bg-purple-deep {
+    background-color: #0b0612;
+  }
+
+  .bg-purple-card {
+    background: linear-gradient(180deg, rgba(28, 16, 46, 0.85) 0%, rgba(18, 10, 31, 0.95) 100%);
+  }
+
+  .bg-purple-glass {
+    background: rgba(22, 13, 38, 0.75);
+    backdrop-filter: blur(12px);
+  }
+
+  .shadow-gold-glow {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', 'Tajawal', sans-serif;
+}
+
+body {
+  background-color: #0b0612;
+  color: #f4efe6;
+  overflow-x: hidden;
+}
+
+/* Custom sleek scrollbar for luxury theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0612;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d1847;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #412466;
+}
