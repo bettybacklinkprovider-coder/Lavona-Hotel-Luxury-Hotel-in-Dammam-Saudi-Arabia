@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wifi, Car, Clock, Utensils, Wind, Bus, ArrowRight, Star, ShieldCheck, Heart, Sparkles, MapPin, Phone } from 'lucide-react';
-import { HOTEL_INFO, ROOMS_DATA, FACILITIES_DATA, TESTIMONIALS, Room } from '../data/hotelData';
+import { HOTEL_INFO, ROOMS_DATA, FACILITIES_DATA, TESTIMONIALS, HOTEL_IMAGES, Room } from '../data/hotelData';
 
 interface HomePageProps {
   onNavigate: (page: 'home' | 'rooms' | 'facilities' | 'contact') => void;
@@ -24,7 +24,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section className="relative h-[92vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Background Image - Luxury Saudi Lobby with Calligraphy & Gold */}
         <img
-          src="/src/assets/images/arabic_luxury_lobby_1791196641617.jpg"
+          src={HOTEL_IMAGES.luxuryLobby}
           alt="Lavona Hotel Dammam Luxury Saudi Lobby"
           className="absolute inset-0 w-full h-full object-cover object-center transform scale-105 animate-pulse-slow"
         />
@@ -98,7 +98,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="relative">
               <div className="relative h-[420px] rounded-2xl overflow-hidden border-2 border-amber-500/30 shadow-2xl">
                 <img
-                  src="/src/assets/images/arabic_gahwa_welcome_1791196654593.jpg"
+                  src={HOTEL_IMAGES.gahwaWelcome}
                   alt="Saudi Hospitality Gahwa at Lavona Hotel"
                   className="w-full h-full object-cover"
                 />
@@ -408,12 +408,12 @@ export const HomePage: React.FC<HomePageProps> = ({
               {/* Photo Showcase Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/src/assets/images/arabic_suite_bedroom_1791196665711.jpg"
+                  src={HOTEL_IMAGES.suiteBedroom}
                   alt="Royal Suite Interior"
                   className="rounded-2xl border border-amber-500/30 object-cover h-48 sm:h-56 w-full shadow-lg"
                 />
                 <img
-                  src="/src/assets/images/arabic_gourmet_buffet_1791196677358.jpg"
+                  src={HOTEL_IMAGES.gourmetBuffet}
                   alt="Gourmet Restaurant Dining"
                   className="rounded-2xl border border-amber-500/30 object-cover h-48 sm:h-56 w-full shadow-lg mt-6"
                 />

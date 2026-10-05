@@ -1,3 +1,27 @@
+import executiveLounge from '../assets/images/arabic_executive_lounge_1791196686663.jpg';
+import gahwaWelcome from '../assets/images/arabic_gahwa_welcome_1791196654593.jpg';
+import gourmetBuffet from '../assets/images/arabic_gourmet_buffet_1791196677358.jpg';
+import luxuryLobby from '../assets/images/arabic_luxury_lobby_1791196641617.jpg';
+import suiteBedroom from '../assets/images/arabic_suite_bedroom_1791196665711.jpg';
+import arabicCoffee from '../assets/images/lavona_arabic_coffee_1791195694315.jpg';
+import heroBanner from '../assets/images/lavona_hero_banner_1791195658209.jpg';
+import hotelFacade from '../assets/images/lavona_hotel_facade_1791195721896.jpg';
+import restaurantDining from '../assets/images/lavona_restaurant_dining_1791195708668.jpg';
+import royalSuite from '../assets/images/lavona_royal_suite_1791195677151.jpg';
+
+export const HOTEL_IMAGES = {
+  executiveLounge,
+  gahwaWelcome,
+  gourmetBuffet,
+  luxuryLobby,
+  suiteBedroom,
+  arabicCoffee,
+  heroBanner,
+  hotelFacade,
+  restaurantDining,
+  royalSuite,
+};
+
 export interface Room {
   id: string;
   nameEn: string;
@@ -67,16 +91,16 @@ export const ROOMS_DATA: Room[] = [
     bedTypeAr: 'سرير كينغ فاخر مع صالة مجلس ملكي',
     viewEn: 'Panoramic Dammam Cityscape & Palms',
     viewAr: 'إطلالة بانورامية على مدينة الدمام والنخيل',
-    image: '/src/assets/images/arabic_suite_bedroom_1791196665711.jpg',
+    image: suiteBedroom,
     descriptionEn: 'The pinnacle of luxury in Dammam. Features a royal master bedroom with Islamic geometric gold lattice artwork, separate velvet Majlis seating room, oversized marble bathroom with jacuzzi, and gold-hued fixtures.',
     descriptionAr: 'قمة الفخامة والرفاهية في الدمام. يضم غرفة نوم رئيسية مزخرفة بالنقوش الذهبية الملكية، صالة مجلس منفصلة بإضاءة دافئة، وحمام رخامي فاخر مزود بجاكوزي ولمسات ذهبية.',
     amenitiesEn: ['Oversized Marble Jacuzzi', 'Private Executive Majlis Access', '300Mbps High-Speed Wi-Fi', '55-inch Smart IPTV', '24/7 Butler Service', 'Nespresso & Saudi Gahwa Station'],
     amenitiesAr: ['جاكوزي رخامي فاخر', 'دخول المجلس الملكي الخاص', 'واي فاي فائق السرعة 300 ميجابت', 'شاشة ذكية 55 بوصة', 'خدمة المساعد الشخصي 24/7', 'ركن القهوة السعودية والنسبريسو'],
     gallery: [
-      '/src/assets/images/arabic_suite_bedroom_1791196665711.jpg',
-      '/src/assets/images/arabic_luxury_lobby_1791196641617.jpg',
-      '/src/assets/images/arabic_gahwa_welcome_1791196654593.jpg',
-      '/src/assets/images/arabic_executive_lounge_1791196686663.jpg'
+      suiteBedroom,
+      luxuryLobby,
+      gahwaWelcome,
+      executiveLounge
     ]
   },
   {
@@ -91,15 +115,15 @@ export const ROOMS_DATA: Room[] = [
     bedTypeAr: 'سرير كينغ مع طقم كنپ مخملي عربي',
     viewEn: 'Dammam City & Palm Avenue',
     viewAr: 'إطلالة على مدينة الدمام وشارع النخيل',
-    image: '/src/assets/images/arabic_executive_lounge_1791196686663.jpg',
+    image: executiveLounge,
     descriptionEn: 'Designed for business executives and discerning travelers. Features a spacious executive desk, ergonomic seating, traditional brass lantern ambiance, and opulent dark purple & gold textiles.',
     descriptionAr: 'مصمم خصيصاً لرجال الأعمال والمسافرين الباحثين عن التميز. يحتوي على مكتب عمل تنفيذي متكامل، جلسة مريحة، وأجواء تراثية دافئة بإضاءة بنفسجية وذهبية.',
     amenitiesEn: ['Ergonomic Executive Desk', 'Free High-Speed Wi-Fi', 'In-Room Safe', 'Rainfall Shower', '24-Hour In-Room Dining', 'Saudi Gahwa & Ajwa Dates Welcome Set'],
     amenitiesAr: ['مكتب عمل تنفيذي', 'واي فاي مجاني سريع', 'خزنة داخل الغرفة', 'دش مطري فاخر', 'خدمة الطعام بالغرف 24/7', 'ضيافة القهوة السعودية وتمر العجوة'],
     gallery: [
-      '/src/assets/images/arabic_executive_lounge_1791196686663.jpg',
-      '/src/assets/images/arabic_luxury_lobby_1791196641617.jpg',
-      '/src/assets/images/arabic_gourmet_buffet_1791196677358.jpg'
+      executiveLounge,
+      luxuryLobby,
+      gourmetBuffet
     ]
   },
   {
@@ -114,14 +138,14 @@ export const ROOMS_DATA: Room[] = [
     bedTypeAr: 'سرير كينج فاخر',
     viewEn: 'City View',
     viewAr: 'إطلالة على المدينة',
-    image: '/src/assets/images/lavona_hotel_facade_1791195721896.jpg',
+    image: hotelFacade,
     descriptionEn: 'An elegant retreat offering plush bedding, custom blackout curtains, silent climate control, and refined purple and gold Arabesque design elements.',
     descriptionAr: 'ملاذ أنيق يوفر مفارش فندقية فائقة النعومة، ستائر عازلة للضوء، تكييف هادئ، وتصميم ملكي متناسق باللمسات العربية.',
     amenitiesEn: ['High-Speed Wi-Fi', 'Smart Climate Control', 'Tea & Coffee Station', 'Luxury Amenities', 'Daily Housekeeping'],
     amenitiesAr: ['واي فاي سريع', 'تحكم ذكي بالتكييف', 'ركن شاي وقهوة', 'مستلزمات عناية فاخرة', 'تنظيف يومي للملفات'],
     gallery: [
-      '/src/assets/images/lavona_hotel_facade_1791195721896.jpg',
-      '/src/assets/images/arabic_suite_bedroom_1791196665711.jpg'
+      hotelFacade,
+      suiteBedroom
     ]
   },
   {
@@ -136,14 +160,14 @@ export const ROOMS_DATA: Room[] = [
     bedTypeAr: 'سرير كينج + سريران منفصلان',
     viewEn: 'Courtyard & Avenue',
     viewAr: 'إطلالة على الفناء والشارع الرئيسي',
-    image: '/src/assets/images/arabic_gahwa_welcome_1791196654593.jpg',
+    image: gahwaWelcome,
     descriptionEn: 'Generously proportioned family suite featuring two separate bedroom spaces, dual bathrooms, and traditional Saudi hospitality amenities for families.',
     descriptionAr: 'جناح عائلي رحب يضم غرفتي نوم منفصلتين، حمامين، ومساحات واسعة تضمن الراحة والخصوصية لكل أفراد العائلة مع ضيافة القهوة السعودية.',
     amenitiesEn: ['Dual Bathrooms', 'High-Speed Wi-Fi', 'Connecting Rooms Option', 'Mini Refrigerator', 'Family Dining Area'],
     amenitiesAr: ['حمامان فاخران', 'واي فاي عالي السرعة', 'إمكانية الغرف المتصلة', 'ثلاجة صغيرة', 'ركن طعام عائلي خاصة'],
     gallery: [
-      '/src/assets/images/arabic_gahwa_welcome_1791196654593.jpg',
-      '/src/assets/images/arabic_gourmet_buffet_1791196677358.jpg'
+      gahwaWelcome,
+      gourmetBuffet
     ]
   }
 ];
@@ -160,7 +184,7 @@ export const FACILITIES_DATA: Facility[] = [
     fullDescAr: 'ابقَ على اتصال دائم مع خدمة الواي فاي عالية السرعة المجانية في جميع أنحاء الفندق، وهي مثالية لمشاهدة الفيديو عالي الدقة واجتماعات العمل والصفح السلس.',
     highlightEn: '300 Mbps Fiber Speed',
     highlightAr: 'سرعة 300 ميجابت/ثانية',
-    image: '/src/assets/images/arabic_executive_lounge_1791196686663.jpg'
+    image: executiveLounge
   },
   {
     id: 'free-parking',
@@ -173,7 +197,7 @@ export const FACILITIES_DATA: Facility[] = [
     fullDescAr: 'استمتع براحة بال كاملة مع موقف السيارات المغطى والآمن مجاناً لجميع النزلاء، بالإضافة لخدمة صف السيارات والدخول المباشر للمصاعد.',
     highlightEn: '24/7 Monitored & Covered',
     highlightAr: 'مغطى ومراقب 24/7',
-    image: '/src/assets/images/lavona_hotel_facade_1791195721896.jpg'
+    image: hotelFacade
   },
   {
     id: 'front-desk',
@@ -186,7 +210,7 @@ export const FACILITIES_DATA: Facility[] = [
     fullDescAr: 'مكتب الاستقبال يعمل على مدار الساعة لخدمتكم، سواء وصلت في وقت متأخر من الليل أو احتجت إنهاء إجراءات المغادرة السريعة.',
     highlightEn: 'Multilingual & Express Check-In',
     highlightAr: 'استقبال متعدد اللغات وإجراءات سريعة',
-    image: '/src/assets/images/arabic_luxury_lobby_1791196641617.jpg'
+    image: luxuryLobby
   },
   {
     id: 'restaurant',
@@ -199,7 +223,7 @@ export const FACILITIES_DATA: Facility[] = [
     fullDescAr: 'يقدم مطعم لافونا تجربة طعام فريدة تجمع بين النكهات السعودية الأصيلة والمأكولات العالمية. يفتح أبوابه للبوفيه المفتوح والوجبات اليومية.',
     highlightEn: 'Saudi Kabsa & International Buffet',
     highlightAr: 'بوفيه مفتوح ومأكولات سعودية شهية',
-    image: '/src/assets/images/arabic_gourmet_buffet_1791196677358.jpg'
+    image: gourmetBuffet
   },
   {
     id: 'air-conditioning',
@@ -212,7 +236,7 @@ export const FACILITIES_DATA: Facility[] = [
     fullDescAr: 'تغلب على حرارة المنطقة الشرقية مع نظام التكييف الذكي والمستقل المصمم للعمل بهدوء تام وتوفير مناخ مريح في الغرفة.',
     highlightEn: 'Silent Digital Climate Control',
     highlightAr: 'تحكم رقمي هادئ في المناخ',
-    image: '/src/assets/images/arabic_suite_bedroom_1791196665711.jpg'
+    image: suiteBedroom
   },
   {
     id: 'airport-shuttle',
@@ -225,7 +249,7 @@ export const FACILITIES_DATA: Facility[] = [
     fullDescAr: 'احجز رحلة تنقل مريحة وسلسة بسيارات فاخرة بين الفندق ومطار الملك فهد الدولي بالدمام مع سائقين محترفين.',
     highlightEn: 'Direct Pickup to DMM Airport',
     highlightAr: 'توصيل مباشر لمطار الملك فهد',
-    image: '/src/assets/images/lavona_hero_banner_1791195658209.jpg'
+    image: heroBanner
   }
 ];
 

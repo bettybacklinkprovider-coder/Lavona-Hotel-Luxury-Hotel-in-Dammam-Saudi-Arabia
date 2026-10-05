@@ -1,5 +1,5 @@
 import React from 'react';
-import { FACILITIES_DATA, HOTEL_INFO } from '../data/hotelData';
+import { FACILITIES_DATA, HOTEL_INFO, HOTEL_IMAGES } from '../data/hotelData';
 import { Wifi, Car, Clock, Utensils, Wind, Bus, Coffee, Sparkles, Calendar, Phone } from 'lucide-react';
 
 interface FacilitiesPageProps {
@@ -44,7 +44,7 @@ export const FacilitiesPage: React.FC<FacilitiesPageProps> = ({
             
             <div className="lg:col-span-6 relative h-80 lg:h-auto">
               <img
-                src="/src/assets/images/arabic_gourmet_buffet_1791196677358.jpg"
+                src={HOTEL_IMAGES.gourmetBuffet}
                 alt="Gourmet Saudi Restaurant Lavona Hotel"
                 className="w-full h-full object-cover"
               />
@@ -170,7 +170,7 @@ export const FacilitiesPage: React.FC<FacilitiesPageProps> = ({
             
             <div className="md:col-span-4 h-64 rounded-2xl overflow-hidden border border-amber-500/30 shadow-xl">
               <img
-                src="/src/assets/images/arabic_gahwa_welcome_1791196654593.jpg"
+                src={HOTEL_IMAGES.gahwaWelcome}
                 alt="Saudi Coffee Welcome"
                 className="w-full h-full object-cover"
               />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, MapPin, Mail, Clock, MessageSquare, Send, CheckCircle2, ArrowUpRight, Compass, ShieldCheck, Share2 } from 'lucide-react';
-import { HOTEL_INFO } from '../data/hotelData';
+import { HOTEL_INFO, HOTEL_IMAGES } from '../data/hotelData';
 
 interface ContactPageProps {
   onOpenBooking: () => void;
@@ -292,7 +292,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             {/* Visual Simulated Map Display */}
             <div className="relative h-80 rounded-2xl overflow-hidden border border-amber-500/30 bg-[#160c26] flex items-center justify-center text-center p-6">
               <img
-                src="/src/assets/images/lavona_hotel_facade_1791195721896.jpg"
+                src={HOTEL_IMAGES.hotelFacade}
                 alt="Lavona Hotel Facade Dammam"
                 className="absolute inset-0 w-full h-full object-cover opacity-30"
               />
